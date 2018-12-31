@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RenderFarm | Atieh</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+<link href="assets/css/toolkit-startup.css" rel="stylesheet">
+<link href="assets/css/application-startup.css" rel="stylesheet">
+<script src="assets/js/app.js"></script>
+
+<style>
+@font-face {
+    font-family: "yekan";
+    src: url("assets/fonts/IRANSansWeb(FaNum).woff2") format("woff2"),
+         url("assets/fonts/IRANSansWeb(FaNum).woff") format("woff"),
+         url('assets/fonts/IRANSansWeb(FaNum)_Light.ttf') format("ttf");
+  }
+  p,h1,h2,h3,h4,h5,h6,div,span,button,input,label,li{
+    font-family: "yekan";
+  }</style>
+</head>
+<body id='body'>
+
+<div class="bsa bsb hidden" id="sidebar">
+    <ul class="nav bpi nav-stacked yl">
+     
+      <li class="m">
+        <a class="qm active" href="index.html">صفحه اصلی</a>
+      </li>
+      <li class="m">
+        <a class="qm" href="minimal/index.html">قوانین و مقررات</a>
+      </li>
+      <li class="m">
+        <a class="qm" href="minimal/index.html">نرخ نامه</a>
+      </li>
+      <li class="m">
+        <a class="qm" href="minimal/index.html">حسابگر</a>
+      </li>
+      <li class="m">
+        <a class="qm" href="minimal/index.html">ارتباط با ما</a>
+      </li>
+      <li class="m">
+        <a class="qm" href="minimal/index.html">دانلود</a>
+      </li>
+      <li class="m">
+        <a class="qm" href="bold/index.html">درباره ما</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+   
+  <div class="brz" id="stage">
+      <section class="customer-logos" style="height:100vh;">
+          <div class="slide"><img src="assets/img/banner_03.jpg"></div>
+
+       </section>
+  <div class="k am bqa bse"
+       style="background: transparent;padding:0; ">
+  
+    
+       
+    <div class="e aij aey app-navbar" style="padding-top: 0 !important;">
+        <img src="assets/img/logo.png" style="width: 164px;float:left;margin-top:20px;" alt="">
+    <nav class="du bqq azg qz">
+  
+      <button
+        class="qv"
+        type="button"
+        data-target="#stage"
+        data-toggle="stage"
+        data-distance="-250">
+        <span class="qw"></span>
+      </button>
+
+  
+      <div class="d-none wx axv">
+        <ul class="navbar-nav" style="background-color: transparent;padding:10px;border-radius: 10px;">
+     
+          <li class="m">
+            <a class="qm active menu_item_clickable" href="/index.html" >صفحه اصلی</a>
+          </li>
+     
+          <li class="m">
+            <a class="qm menu_item_clickable" id="nekh" goTo='#price_box'>نرخ نامه</a>
+          </li>
+          <li class="m">
+            <a class="qm menu_item_clickable" goTo='#render_parent'>حسابگر</a>
+          </li>
+          <li class="m">
+            <a class="qm menu_item_clickable" goTo='#contactUS'>ارتباط با ما</a>
+          </li>
+          <li class="m">
+            <a class="qm menu_item_clickable" goTo='#gallary'>گالری</a>
+          </li>
+          <li class="m">
+            <a class="qm menu_item_clickable" goTo='#aboutUS'>درباره ما</a>
+          </li>
+          <li class="m">
+            <a class="qm menu_item_clickable" target="_blank" href="/rules.html">قوانین و مقررات</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+
+  
+    <div class=" ait" style="    margin-top: 171px;">
+
+
+      <div class="e" style="text-align:center;margin-top:40vh;">
+        <div class="c left_Div" style="text-align:center;width:50%;display: block;margin:auto;">
+          <div class="" id="typed-strings" style="text-align:center;width:100%;">
+            <h1 class="bsf bsg" style="text-align:center">رندرفارمینگ</h1>
+            <p class="al agw an" style="text-align:center;">
+              سامانه محاسبه قیمت رندر شرکت آتیه ارتباط کیش
+            </p>
+            <button class="dm ox ap  menu_item_clickable" goTo='#render_parent'>محاسبه قیمت</button>
+          </div>
+
+          <div id="typed"></div>
+
+        </div>
+
+  
+      </div>
+
+    
+    </div>
+
+
+
+  </div>
+
+
+  <script async>
+    // document.addEventListener("DOMContentLoaded", function(event) {
+    //   var typed = new Typed('#typed', {
+    //     strings: ["", "Designers.", "People."],
+    //     // stringsElement: '#typed-strings',
+    //     contentType: 'html',
+    //     loop: false,
+    //     typeSpeed: 30,
+		// // time before typing starts
+		// startDelay: 1200,
+		// // backspacing speed
+		// backSpeed: 20,
+		// // time before backspacing
+		// backDelay: 500,
+    //   });
+    //     });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section style="    min-height: auto;
+height: auto;" class="row">
+    <div class="">
+        <div class="">
+          <div class="">
+            <div class="col-xs-6" style="">
+
+      
+                <!-- <img src="assets/img/Picture2.png" style="    position: absolute;
+                top: -99px;
+                right: 40%;
+                z-index: 99999999;
+                width: 19%;" alt=""> -->
+              <!-- <h6 class="an axv">Rich Information</h6> -->
+      <div class="k am block-secondary ab" id="render_parent" style="padding-top: 0;
+      height: 25.5em;
+      position: relative;
+      top: 0;    padding-top: 50px; padding-left: 50px; padding-right: 50px;">
+
+<div style="    position: absolute;
+top: -41px;
+right: 27%;
+background: white;
+width: 50%;
+text-align: center;
+border-radius: 100%;
+color: black;
+padding-top: 45px;
+padding-bottom: 6px;
+background: #C3272B;
+color: white;">
+    مخصوص کاربران حرفه ای
+
+</div>
+
+
+<br>
+
+          <div class="e">
+            <div class="c aq">
+              <div class="gf hu jv">
+                <!-- <h6 class="an axv" style="text-align:center;">
+                  مخصوص کاربران حرفه ای
+                </h6> -->
+                <h2>زمان رندر طرح هایتان را کاهش دهید!
+                </h2>
+                <p class="al agw an">
+                </p>
+                <button class="dm oz ap ayu" id='render' style="display:block;margin:auto;">
+                  محاسبه قیمت
+                </button>
+              </div>
+              <div class="ge ajb ht jw">
+      
+                <div class="form-group">
+                  <label for="frame_number">
+                      تعداد فریم
+                  </label>
+                  <input type="number" class="form-control" name="frame_number" placeholder="تعداد" id="frame_number">
+                </div>
+      
+                <div class="form-group">
+                  زمان انیمیشن
+                    <input type="number" name="render_time" class="form-control" placeholder="دقیقه" id="render_time">
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="cpu_speed">
+                        سرعت cpu
+                    </label>
+                      <input type="number" placeholder="گیگاهرتز" name="cpu_speed" class="form-control" id="cpu_speed">
+               
+            
+
+                    </div>
+           
+                    <div class="form-group">
+                      <label for="cpu_number">
+                          تعداد هسته cpu
+                      </label>
+                      <input type="number" placeholder="تعداد" name="cpu_number" class="form-control" id="cpu_number">
+                
+                    </div>
+              </div>
+      
+
+            </div>
+          </div>
+        </div>
+    
+            </div>
+
+
+            <div class="col-xs-6" style="">
+                <!-- <img class="bsh" src="http://seraj.ir/assets/img/service-multimedia.png" style="width: 100%;">
+                <p class="al agw" style="    padding: 50px;
+                text-align: justify;    padding-bottom: 0;">
+                  رندر فارم
+                  شرکت آتیه ارتباط کیش، فعالیت خود را در سال 1396 با ایجاد و ساخت برنامه های تخصصی تلویزیونی در موضوعات مختلف مربوط به فضای مجازی آغاز نمود. ساخت مستندهای تخصصی، ارائه مشاوره ها و ایجاد حمایت های تخصصی به فعالان حوزه رسانه های تصویری و ساماندهی آنان ازجمله فعالیت های این مرکز می باشد 
+                <br>
+                <br>
+                <span style="font-weight:bold;color:red;">
+                  شما میتوانید از طریق بخش روبرو محاسبات مربوط به رندر پروژه خود را انجام دهید 
+                </span>
+
+                <button id="fuckbutton" style="    display: block;
+                margin: auto;" class='btn btn-info btn-large'>
+                  تعرفه ها
+                </button>
+                </p> -->
+                <!-- <img src="assets/img/Picture1.png" style="    position: absolute;
+                top: -99px;
+                right: 40%;
+                z-index: 99999999;
+                width: 19%;" alt=""> -->
+<div class="k am block-secondary ab" id="render_parent" style="padding-top: 0;
+height: 25.5em;
+position: relative;
+top: 0;    padding-top: 50px; padding-left: 50px; padding-right: 50px;">
+
+
+<div style="    position: absolute;
+top: -41px;
+right: 27%;
+background: white;
+width: 50%;
+text-align: center;
+border-radius: 100%;
+color: black;
+padding-top: 45px;
+padding-bottom: 6px;
+background: #C3272B;
+color: white;">
+    مخصوص کاربران عادی
+
+</div>
+
+
+<br>
+
+    <div class="e">
+      <div class="c aq">
+        <div class="gf hu jv">
+          <!-- <h6 class="an axv" style="text-align:center;">
+            مخصوص کاربران عادی
+          </h6> -->
+          <h2>
+            به راحتی رندر کنید
+          </h2>
+          <p class="al agw an">
+          </p>
+          <button class="dm oz ap ayu" id='render2' style="display:block;margin:auto;">
+            محاسبه قیمت
+          </button>
+        </div>
+        <div class="ge ajb ht jw">
+
+          <div class="form-group">
+            <label for="frame_number2">
+                زمان انیمیشن
+            </label>
+            <input type="number" class="form-control" name="frame_number" placeholder="دقیقه" id="frame_number2">
+          </div>
+
+          <div class="form-group">
+            <label for="render_time2">
+                فریم در ثانیه
+            </label>
+              <input type="number" name="render_time" class="form-control" placeholder="ثانیه" id="render_time2">
+            </div>
+
+            <div class="form-group">
+              <label for="baravord2">
+                  براورد زمان رندر هر فریم
+              </label>
+              <input type="number" name="render_time" class="form-control" placeholder="تعداد" id="baravord2">
+            </div>
+      
+ 
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+     
+              </div>
+          </div>
+      
+        </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="col-xs-12" id="price_parent" style="display:none;">
+            <div class="col-xs-4">
+                <h3>هزینه رندر با اولویت کم</h3>
+                <p id='reponse_ol3'></p>
+                <button class="btn btn-success"  data-toggle="modal" data-target="#myModal">
+                    ثبت پروژه
+                  </button>
+            </div>
+            <div class="col-xs-4">
+              <h3>هزینه رندر با اولویت متوسط</h3>
+              <p id='reponse_ol2'></p>
+              <button class="btn btn-success"  data-toggle="modal" data-target="#myModal">
+                  ثبت پروژه
+                </button>
+          </div>
+          <div class="col-xs-4">
+            <h3>هزینه رندر با اولویت بالا</h3>
+            <p id='reponse_ol1'></p>
+        
+            <button class="btn btn-success"  data-toggle="modal" data-target="#myModal">
+                 ثبت پروژه
+            </button>
+        </div>
+
+
+    
+        </div>
+        </div>
+</section>
+
+
+  
+
+
+
+
+
+<div class="k aj" style="display:block;padding-top:50px;" id='price_box'>
+    <div class="e axh">
+  
+      <div class="c ahd yu">
+        <div class="fi gh gt">
+          <h6 class="an axv agi">تعرفه رندر</h6>
+          <h2>مدل رندر خود را بر اساس تعداد فریم خود انتخاب کنید تا در سرعت تمام شدن رندر تسهیل ببخشد</h2>
+        </div>
+      </div>
+  
+      <div class="c">
+        <div class="gd ail ahy ahd">
+          <div class="ahx agi">
+            <h6 class="an axv agw">اولویت کم</h6>
+        
+          </div>
+  
+          <ul class="ek ayo ayq agt">
+            <li class="aij"><strong>500 ریال</strong> هر گیگاهرتز ساعت</li>
+            <li class="aij"><strong>35200 ریال</strong>برای هر سرور در ساعت</li>
+            <li class="aij">1 تا 10 سرور</li>
+            <li class="aij">نصب نرم افزار و افزپنه رایگان</li>
+            <li class="aij">شروع 5 تا 8 روز بعد از عقد قرارداد</li>
+          </ul>
+  
+           <!-- <button class="dm ap ox btn-block">
+            Start <span class="d-none xn">a personal account</span>
+          </button>  -->
+        </div>
+  
+        <div class="gd ail ahy ahd">
+          <div class="ahx">
+            <h6 class="an axv agw">اولویت متوسط</h6>
+       
+     
+          </div>
+  
+          <ul class="ek ayo ayq agt">
+            <li class="aij"><strong>670 ریال</strong> هر گیگاهرتز ساعت</li>
+            <li class="aij"><strong>47168 ریال</strong> برای هر سرور در ساعت</li>
+            <li class="aij"><strong>11 تا 20</strong> سرور</li>
+            <li class="aij">نصب نرم افزار و افزپنه رایگان</li>
+            <li class="aij">شروع 3 تا5 روز بعد از عقد قرارداد</li>
+
+          </ul>
+<!--   
+           <button class="dm ap ox btn-block">
+            Start <span class="d-none xn">a business account</span>
+          </button> -->
+        </div>
+  
+        <div class="gd ail ahr ahd">
+          <div class="ahx">
+            <h6 class="an axv agw">اولویت بالا</h6>
+
+          </div>
+  
+          <ul class="ek ayo ayq agt">
+            <li class="aij"><strong>720 ریال</strong> هر گیگاهرتز ساعت</li>
+            <li class="aij"><strong>50688 ریال</strong>برای هر سرور در ساعت</li>
+            <li class="aij">20 تا 40 سرور</li>
+            <li class="aij">نصب نرم افزار و افزپنه رایگان</li>
+            <li class="aij">شروع 1 تا 3 روز بعد از عقد قرارداد</li>
+          </ul>
+
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  
+
+  <div class="k ae aiq">
+    <div class="e ays">
+    <ul style="    list-style: none;
+    display: -webkit-inline-box;">
+      <li style="       width: 44px;">
+          <i class="fa fa-telegram icon-telegram" style="    zoom: 1.5;
+          border: 1px solid white;
+          border-radius: 100%;
+          padding: 5px;
+          background-color: #3498db;
+          width: 74px;
+          height: 25px;
+          color: black;
+          padding-left: 19px;"></i>
+      </li>
+
+      <li style="        width: 44px;">
+          <i class="fa fa-instagram icon-instagram" style="      zoom: 1.5;
+          border: 1px solid white;
+          border-radius: 100%;
+          padding: 5px;
+          background-color: #3498db;
+          width: 74px;
+          height: 25px;
+          color: black;
+          padding-left: 19px;"></i>
+      </li>
+
+
+
+
+      <li style="        width: 44px;">
+          <i class="fa fa-linkedin icon-linkedin" style="      zoom: 1.5;
+          border: 1px solid white;
+          border-radius: 100%;
+          padding: 5px;
+          background-color: #3498db;
+          width: 74px;
+          height: 25px;
+          color: black;
+          padding-left: 19px;"></i>
+      </li>
+    </ul>
+
+
+
+
+    </div>
+  </div>
+
+<section class="our_customer">
+  <h3>
+    مشتریان ما
+  </h3>
+  <div class="row">
+    <div class="col-xs-3"><img src="assets/img/1.jpg"></div>
+    <div class="col-xs-3"><img src="assets/img/3.jpg"></div>
+    <div class="col-xs-3"><img src="assets/img/4.jpg"></div>
+    <div class="col-xs-3"><img src="assets/img/5.jpg"></div>
+    <br>
+  </div>
+  <br>
+  <!-- <div class="row">
+    <div class="col-xs-3"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+    <div class="col-xs-3"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+    <div class="col-xs-3"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+    <div class="col-xs-3"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+  </div> -->
+</section>
+
+  <div class="container gallery-container">
+  <div class="tz-gallery">
+
+    <div class="row">
+
+        <div class="col-sm-12 col-md-4">
+            <a class="lightbox" target="_blank" href="assets/img/1.jpg">
+              <img src="assets/img/1.jpg" alt="Park" style="height: 100%;
+              min-height: 250px;">
+            </a>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="assets/img/3.jpg">
+                <img src="assets/img/3.jpg" alt="Rails" style="height: 100%;
+                min-height: 250px;">
+            </a>
+        </div>
+
+
+  
+
+
+        <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="assets/img/4.jpg">
+                <img src="assets/img/4.jpg" style="height: 100%;
+                min-height: 250px;" alt="Tunnel">
+            </a>
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <a class="lightbox" href="assets/img/5.jpg">
+                <img src="assets/img/5.jpg" alt="Traffic">
+            </a>
+        </div>
+      <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="assets/img/6.jpg">
+                <img src="assets/img/6.jpg" style="height: 100%;
+                min-height: 250px;" alt="Coast">
+            </a>
+        </div> 
+       
+
+        <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="assets/img/7.jpg">
+                <img src="assets/img/7.jpg" style="height: 100%;
+                min-height: 250px;" alt="Park">
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+  
+  <div id="contactUS" class="k am ad"
+       style="background-image: url(assets/img/startup-3.jpg);padding-top: 0 !important;">
+      <div class="e">
+        <div class="c aq aic yt">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.6966184015255!2d51.393631300594826!3d35.71654629313249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzU5LjYiTiA1McKwMjMnMzkuNCJF!5e0!3m2!1sen!2s!4v1542011400182" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+           
+        
+            <div class="fs ge aiq">
+            <h6 class="an axv agi" style="text-align:center;">تماس با ما</h6>
+          
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+              <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" method="POST" role="form">
+
+                  <div class="form-group">
+                      <label class="form-label" id="nameLabel" for="name"></label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="نام شما" tabindex="1">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-label" id="emailLabel" for="email"></label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="ایمیل" tabindex="2">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-label" id="subjectLabel" for="sublect"></label>
+                      <input type="text" class="form-control" id="subject" name="subject" placeholder="عنوان" tabindex="3">
+                  </div>
+
+                  <div class="form-group">
+                      <label class="form-label" id="messageLabel" for="message"></label>
+                      <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="‍پیام شما" tabindex="4"></textarea>                                 
+                  </div>
+
+                  <div class="text-center margin-top-25">
+                      <button type="submit" class="btn btn-info btn-border btn-large">ارسال پیام</button>
+                  </div>
+
+              </form><!-- End form -->
+            
+          </div>
+
+          </div>
+        </div>
+
+        <p style="    text-align: center;">
+          جهت پرسش و یا هماهنگی میتوانید در ساعات اداری با شماره تلفن
+            <a href="tel:02188394685">88394685</a>
+            تماس حاصل فرمایید
+        </p>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+  
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" dir="rtl" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">
+                فرم ثبت پروژه
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                  <div class="form-group">
+                    <label for="">نام و نام خانوادگی</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for="">شماره تماس</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">ایمیل</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="">عنوان پروژه</label>
+                          <input type="text" class="form-control">
+                        </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+              <button type="button" class="btn btn-primary">ثبت پروژه</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
